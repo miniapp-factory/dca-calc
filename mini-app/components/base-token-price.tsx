@@ -17,7 +17,7 @@ export default function BaseTokenPrice({ pairAddress }: BaseTokenPriceProps) {
     setError(null);
     try {
       const res = await fetch(
-        `https://api.dexscreener.io/latest/dex/pairs?pairAddress=${address}`
+        `https://api.dexscreener.com/latest/dex/pairs/base/${address}`
       );
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
