@@ -31,7 +31,9 @@ export default function BaseTokenPrice({ pairAddress }: BaseTokenPriceProps) {
         // The price in USD is available as `priceUsd` on the pair object
         setPrice(pair.priceUsd ?? null);
       } catch (err: unknown) {
-        setError((err as any).message ?? "Unknown error");
+        const message =
+          err instanceof Error ? err.message : "Unknown error";
+        setError(message);
       } finally {
         setLoading(false);
       }
