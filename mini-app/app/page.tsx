@@ -1,5 +1,6 @@
 import { description, title } from "@/lib/metadata";
 import { generateMetadata } from "@/lib/farcaster-embed";
+import BaseTokenPrice from "@/components/base-token-price";
 
 export { generateMetadata };
 
@@ -9,6 +10,7 @@ export default function Home() {
     <main className="flex flex-col gap-3 place-items-center place-content-center px-4 grow">
       <span className="text-2xl">{title}</span>
       <span className="text-muted-foreground">{description}</span>
+      <BaseTokenPrice pairAddress="0x1234567890abcdef1234567890abcdef12345678" />
     </main>
   );
 }
