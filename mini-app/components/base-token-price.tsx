@@ -7,7 +7,7 @@ export interface BaseTokenPriceProps {
 }
 
 export default function BaseTokenPrice({ pairAddress }: BaseTokenPriceProps) {
-  const [inputAddress, setInputAddress] = useState<string>(pairAddress);
+  const [inputAddress, setInputAddress] = useState<string>("0x7aD1dB1b8A8ce3040BC1807d7Af6A8BC88584600");
   const [price, setPrice] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
