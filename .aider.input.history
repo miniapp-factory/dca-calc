@@ -32,3 +32,9 @@
 
 # 2025-11-23 22:16:51.508962
 +change the api address to this: https://api.dexscreener.com/latest/dex/pairs/base/${address}
+
+# 2025-11-24 17:34:58.272310
++make the default pair address 0x7aD1dB1b8A8ce3040BC1807d7Af6A8BC88584600
+
+# 2025-11-24 17:34:58.273781
++make the default pair address 0x7aD1dB1b8A8ce3040BC1807d7Af6A8BC88584600
